@@ -18,7 +18,7 @@
 
 /*                         Universal css style             */
 * {
-  background-color: wheat;
+  background-color: whitesmoke;
   font-family: "Poppins", serif;
 }
 
@@ -64,13 +64,77 @@ ul a {
   color: black;
 }
 
+/*                                banner styles   */
+.banner-container {
+  /* background-image: url("../images/Circle_design.svg"); */
+  /* border: 2px solid red; */
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-around;
+
+  /* grid-template-columns: repeat(2, 1fr); */
+}
+
+.banner-left {
+  /* width: ; */
+  /* border: 2px solid red; */
+  padding: 15px;
+}
+
+.banner-title {
+  /* border: 2px solid red; */
+  margin-bottom: 20px;
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+.banner-desc {
+  /* border: 2px solid red; */
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.banner-btn {
+  margin-bottom: 20px;
+  border: none;
+  width: 150px;
+  height: 40px;
+  background-color: #e02c6d;
+  color: white;
+  border-radius: 41px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.right-arrow {
+  padding-left: 5px;
+  font-size: 1.25rem;
+  /* width: 480px; */
+  /* height: 24px; */
+  background-color: #e02c6d;
+  color: white;
+}
+
+.banner-right {
+  padding: 20px;
+  /* padding-bottom: 200px; */
+  margin-left: 30px;
+  /* border: 2px solid red; */
+}
+.camera-img {
+  padding: 10px;
+  background-image: url("../images/Circle_design.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 /*  */
 /*  */
 /*  */
 /*                             Responsive Mobile styling   */
 
 /* @media screen and (max-width: 576px) { */
-@media screen and (max-width: 654px) {
+@media screen and (max-width: 576px) {
+  /*                                navbar style  */
   .nav-link,
   #search-icon {
     display: none;
@@ -85,4 +149,34 @@ ul a {
   .nav-title {
     margin-left: 45px;
   }
+
+  /*                                 banner style  */
+  .banner-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .banner-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .camera-img {
+    width: 85%;
+    padding-right: 20px;
+  }
+  .banner-left,
+  .banner-right {
+    width: 90%;
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+  .banner-desc {
+    font-size: 0.875rem;
+  }
+  /* .banner-btn{
+    font-size: 1rem;
+
+  } */
 }
