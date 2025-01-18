@@ -18,7 +18,7 @@
 
 /*                         Universal css style             */
 * {
-  background-color: whitesmoke;
+  background-color: bisque;
   font-family: "Poppins", serif;
 }
 
@@ -127,6 +127,35 @@ ul a {
   background-size: contain;
 }
 
+/*                                nav footer styles  */
+.nav-footer-container {
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  width: 80vw;
+  margin: 0 auto;
+
+  justify-content: space-around;
+  /* gap: 100px; */
+  align-items: center;
+}
+.nav-footer-img {
+  text-align: center;
+  width: 50px;
+  padding: 20px;
+}
+#alibaba-logo {
+  width: 50px;
+  /* height: 40px; */
+}
+#amazon-logo {
+  margin-top: 10px;
+  width: 55px;
+}
+#target-logo {
+  width: 65px;
+}
+#wallmart-logo {
+  width: 75px;
+}
 /*  */
 /*  */
 /*  */
@@ -175,8 +204,10 @@ ul a {
   .banner-desc {
     font-size: 0.875rem;
   }
-  /* .banner-btn{
-    font-size: 1rem;
 
-  } */
+  /*                                nav footer style  */
+  .nav-footer-container {
+    border: none;
+    flex-wrap: wrap;
+  }
 }
