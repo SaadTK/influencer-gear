@@ -1,0 +1,88 @@
+/*                             google font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*                         Universal css style             */
+* {
+  background-color: wheat;
+  font-family: "Poppins", serif;
+}
+
+/*                             shared style               */
+.displey-flex {
+  display: flex;
+  align-items: center;
+}
+
+/*                           navbar styles                */
+ul li {
+  list-style-type: none;
+}
+ul a {
+  text-decoration: none;
+}
+.navbar {
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+#burger-icon {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+#search-icon,
+#cart-icon {
+  margin-left: 30px;
+  width: 24px;
+  height: auto;
+  /* height: 24px; */
+}
+.nav-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* flex-grow: 1; */
+}
+.nav-link {
+  margin-left: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+}
+
+/*  */
+/*  */
+/*  */
+/*                             Responsive Mobile styling   */
+
+/* @media screen and (max-width: 576px) { */
+@media screen and (max-width: 654px) {
+  .nav-link,
+  #search-icon {
+    display: none;
+    /* margin-left: 30px; */
+  }
+  #burger-icon {
+    margin-right: 15px;
+    display: block;
+    /* width: 10px; */
+    /* height: 15px; */
+  }
+  .nav-title {
+    margin-left: 45px;
+  }
+}
