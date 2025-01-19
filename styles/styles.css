@@ -18,7 +18,7 @@
 
 /*                         Universal css style             */
 * {
-  background-color: bisque;
+  background-color: whitesmoke;
   font-family: "Poppins", serif;
 }
 
@@ -156,7 +156,65 @@ ul a {
 #wallmart-logo {
   width: 75px;
 }
-/*  */
+
+/*                                 Collection styles */
+
+.collection-outer-container {
+  border: 3px solid green;
+  margin-top: 100px;
+}
+.collection-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.collection-container {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  width: 84%;
+  margin: 0 auto;
+  background-color: rgb(128, 128, 128, 0.2);
+}
+.collection1 {
+  /* box-shadow: 30px 30px 30px 10px gray; */
+
+  padding: 10px;
+  border: 2px solid gainsboro;
+  border-radius: 8px;
+}
+.collection1-title {
+  margin-bottom: 6px;
+  margin-top: 16px;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.collection1-price {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  margin-top: 1px;
+}
+.collection1-desc {
+  width: 150px;
+  border: 2px solid slateblue;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #787885;
+}
+.collection1-rating {
+  width: 100px;
+}
+.see-more-btn {
+  margin-left: auto;
+  display: block;
+  text-align: right;
+}
+
 /*  */
 /*  */
 /*                             Responsive Mobile styling   */
@@ -209,5 +267,29 @@ ul a {
   .nav-footer-container {
     border: none;
     flex-wrap: wrap;
+  }
+
+  /*                                  container style  */
+  .collection-container {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+  .collection1-img {
+    width: 100%;
+  }
+  .collection1-price,
+  .collection1-title {
+    font-weight: 700;
+  }
+  .collection1-desc {
+    width: 100%;
+  }
+  .collection-title {
+    /* text-align: center; */
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 600;
   }
 }
